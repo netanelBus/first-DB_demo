@@ -1,0 +1,29 @@
+GET http://localhost:5000/posts
+
+###
+
+GET http://localhost:5000/posts/64a5a6ff4c2a2594ff7f5f7a
+
+
+###
+POST http://localhost:5000/posts
+content-type: application/json
+
+{
+    "title": "this is first post!",
+    "body": "some more text...", 
+    "userId": "64a5a6ff4c2a2594ff7f5f7a"
+}
+
+###
+
+PUT  http://localhost:5000/posts/64a5a6ff4c2a2594ff7f5f7a
+content-type: application/json
+
+{
+    "hash": "123456789"
+}
+
+###
+
+DELETE   http://localhost:5000/posts/64a5a6ff4c2a2594ff7f5f7a
